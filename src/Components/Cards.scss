@@ -1,0 +1,21 @@
+.card {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .title {
+    margin: 0;
+  }

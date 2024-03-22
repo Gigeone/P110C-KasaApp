@@ -1,0 +1,16 @@
+.banner {
+    position: relative;
+    background-image: url("../../public/banner.png");
+    height: 223px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-title {
+    font-size: 2rem; 
+  }
