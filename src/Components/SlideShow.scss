@@ -1,0 +1,57 @@
+.slideshow-container {
+  height: 415px;
+  width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+  
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .slide.active {
+    transform: translateX(0%);
+  }
+  
+  .carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-arrows button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #555;
+  }

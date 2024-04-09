@@ -1,7 +1,8 @@
 import React from 'react'
 import Cards from '../Components/Cards'
-import homes from '../Data/appartements.json'
+import appartements from '../Data/appartements.json'
 import Banner from '../Components/Banner'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -9,8 +10,11 @@ const Home = () => {
     <div className="home">
       <Banner />
       <div className="homes">
-      {homes.map((home, index) => (
-        <Cards key={index} cover={home.cover} title={home.title} />
+      {appartements.map((appartement) => (
+        <Link to={`/appartement/${appartement.id}`} key={appartement.id}>
+          <Cards cover={appartement.cover} title={appartement.title} />
+        </Link>
+        
       ))}
       </div>
     </div>
