@@ -25,11 +25,7 @@ const Dropdown = ({ label, data }) => {
           {data}
         </div>
       )}
-      {/* {selectedOption && (
-        <div className="selected-option">
-          Selected Option: {selectedOption.label}
-        </div>
-      )} */}
+      
     </div>
   );
 };
