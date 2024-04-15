@@ -35,6 +35,15 @@ const Appartement = () => {
             <div>
               <h1 className="title">{appartement.title}</h1>
               <p className="location">{appartement.location}</p>
+              <div className="tagsContainer">
+                {appartement.tags
+                  ? appartement.tags.map((tag) => (
+                      <p key={tag} className="tag">
+                        {tag}
+                      </p>
+                    ))
+                  : null}
+              </div>
             </div>
             <div>
               <div className="hostContainer">
@@ -45,20 +54,12 @@ const Appartement = () => {
                   className="hostPic"
                 />
               </div>
+              <div>
+                <StarRating ratings={appartement.rating} />
+              </div>
             </div>
           </div>
-          <div className="tagsContainer">
-            {appartement.tags
-              ? appartement.tags.map((tag) => (
-                  <p key={tag} className="tag">
-                    {tag}
-                  </p>
-                ))
-              : null}
-          </div>
-          <div>
-            <StarRating ratings={appartement.rating} />
-          </div>
+
           <div className="dropdown-container">
             <Dropdown label={"Description"} data={appartement.description} />
             <Dropdown

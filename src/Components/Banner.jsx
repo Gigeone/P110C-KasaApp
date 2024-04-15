@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Banner = () => {
+const Banner = ({ image }) => {
   return (
     <div className="banner">
-      <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
+      <img src={image} alt="Banner1" className="banner-image banner1" />
+      <div className="banner-text">
+        Chez vous,{" "}
+        <span className="text-mobile-split">partout et ailleurs</span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

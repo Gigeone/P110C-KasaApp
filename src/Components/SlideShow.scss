@@ -1,57 +1,55 @@
-.slideshow-container {
-  height: 415px;
+.slide-image {
+  max-height: 415px;
   width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
   
-  .carousel {
-    display: flex;
+  border-radius: 25px;
+
+  img {
     width: 100%;
-  
+    height : 415px;
+    object-fit: cover;
   }
-  
-  .slide {
-    flex: 0 0 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-  }
-  
-  .slide.active {
-    transform: translateX(0%);
-  }
-  
-  .carousel-arrows {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .carousel-arrows button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .dot.active {
-    background-color: #555;
-  }
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 96px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.prev {
+  left: 10px;
+  padding-right: 20px;
+}
+
+.next {
+  right: 10px;
+  padding-left: 20px;
+}
+
+.slide-counter {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  z-index: 100;
+  color: white;
+}
