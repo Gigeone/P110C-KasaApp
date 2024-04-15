@@ -27,7 +27,7 @@ const Appartement = () => {
   }, []);
 
   return (
-    <div>
+    <div className="appartement-page">
       {appartement ? (
         <div>
           <SlideShow pictures={appartement.pictures} />

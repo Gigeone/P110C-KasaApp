@@ -7,9 +7,9 @@ import imageBanner1 from "../Assets/imageBanner1.png";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home-page">
       <Banner image={imageBanner1} />
-      <div className="homes">
+      <div className="grid-container">
         {appartements.map((appartement) => (
           <Link to={`/appartement/${appartement.id}`} key={appartement.id}>
             <Cards cover={appartement.cover} title={appartement.title} />
