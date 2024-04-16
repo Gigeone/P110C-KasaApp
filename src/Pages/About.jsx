@@ -7,9 +7,9 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-page">
       <Banner image={imageBanner2} />
-      <div className="about-page">
+      <div className="dropdown-list">
         {aboutList.map((item) => (
           <Dropdown key={item.title} label={item.title} data={item.content} />
         ))}

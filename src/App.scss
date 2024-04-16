@@ -10,9 +10,15 @@
 @import '../src/Components/StarRating.scss';
 
 
-body {
-    margin: 20px;
-  }
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 // VARIABLES
 $primary-color: #FF6060;

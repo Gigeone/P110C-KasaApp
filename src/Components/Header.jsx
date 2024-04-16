@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo1 from "../Assets/LOGO.png";
 
 const Header = () => {
   return (
     <header className="header">
       <img src={Logo1} alt="logo Kasa" className="logo" />
-      <nav className="nav">
+      <NavLink className="nav">
         <ul>
           <li>
-            <Link to="/">Accueil</Link>
+            <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <Link to="/about">A propos</Link>
+            <NavLink to="/about">A propos</NavLink>
           </li>
         </ul>
-      </nav>
+      </NavLink>
     </header>
   );
 };

@@ -1,6 +1,7 @@
 .star-rating {
+    justify-content:flex-end ;
     span {
-        font-size: 30px;
+        font-size: 36px;
     }
 }
 
@@ -11,3 +12,11 @@
   .gray-star {
     color: #E3E3E3;
   }
+
+  @media screen and (max-width: 500px) { 
+    .star-rating {
+      span {
+          font-size: 18px;
+      }
+  }
+  } 

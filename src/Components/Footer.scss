@@ -1,16 +1,38 @@
 // Footer.scss
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  
-    .logo {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
+  height: 209px;
+  background-color: #000000;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
     .phrase {
-      font-size: 14px;
+      width: 513px;
+      height: 46px;
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: center;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .footer {
+      .phrase {
+        font-size: 12px ;
+        line-height: 17px;
+        width: 133px ;
+      
+    }
+
+    .mobile-text {
+        display: block;
+    }
+
+
+    }
+}

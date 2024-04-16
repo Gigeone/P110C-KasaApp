@@ -7,7 +7,6 @@
     .dropdown {
         width: 45%;
         margin-bottom: 30px;
-        margin-top: 30px;
     }
 }
 
@@ -36,8 +35,9 @@
     text-align: left;
     border-radius: 5px;
     color: black;
-    padding: 25px 28px 20px 20px;
+    padding: 20px;
     overflow: hidden;
+    margin:auto;
 
     ul {
         list-style-type: none;

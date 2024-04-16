@@ -1,12 +1,32 @@
 .about-page {
     display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
     flex-direction: column;
-    gap: 30px;
-    padding: 38px 78px;
-    align-items: center;
+    padding: 0 100px;
+
+    .dropdown-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 38px 78px;
+        align-items: center;
     
+        .dropdown {
+            width: 100%;
+        }
+        
+    }
 }
 
-.dropdown {
-    width: 100%;
-}
+@media screen and (max-width: 960px) {
+    .about-page {
+     padding: 0 20px;
+
+        .dropdown-list {
+            padding: 38px 0;
+        }
+    }
+  }
+
+

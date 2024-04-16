@@ -8,7 +8,12 @@ import imageBanner1 from "../Assets/imageBanner1.png";
 const Home = () => {
   return (
     <div className="home-page">
-      <Banner image={imageBanner1} />
+      <Banner
+        image={imageBanner1}
+        text={
+          "Chez vous, <span class='text-mobile-split'>partout et ailleurs</span>"
+        }
+      />
       <div className="grid-container">
         {appartements.map((appartement) => (
           <Link to={`/appartement/${appartement.id}`} key={appartement.id}>

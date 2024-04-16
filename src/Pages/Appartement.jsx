@@ -45,7 +45,7 @@ const Appartement = () => {
                   : null}
               </div>
             </div>
-            <div>
+            <div className="host-and-rating">
               <div className="hostContainer">
                 <p className="hostName">{appartement.host.name}</p>
                 <img
