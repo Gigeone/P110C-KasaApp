@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Cards = ({ cover, title }) => {
   return (
-    <div className="card" style={{ backgroundImage: `url(${cover})` }}>
-      <div className="title">{title}</div>
+    <div className="logements-card">
+      <div className="card-cover">
+        <img src={cover} alt={title} />
+        <div className="card-content">{title}</div>
+      </div>
     </div>
   );
 };
 
-export default Cards
+export default Cards;

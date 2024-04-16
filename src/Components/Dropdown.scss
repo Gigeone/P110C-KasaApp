@@ -22,15 +22,23 @@
     padding: 0 20px 0 10px;
 }
 
+.collapse-icon {
+    transition: transform 0.16s ease;
+}
+
+.collapse-icon.open {
+    transform: rotate(180deg);
+}
+
 
 
 
 .dropdown-menu {
     background-color: #F6F6F6;
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    // line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
     border-radius: 5px;
