@@ -5,12 +5,12 @@
     }
 }
 
-.gold-star {
-    color: #FF6060;
+.red-star {
+    fill: $primary-color;
   }
   
   .gray-star {
-    color: #E3E3E3;
+    fill: #E3E3E3;
   }
 
   @media screen and (max-width: 500px) { 

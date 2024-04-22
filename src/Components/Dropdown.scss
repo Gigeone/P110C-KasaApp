@@ -15,8 +15,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6060;
-    color: white;
+    background-color: $primary-color;
+    color: $secondary-color;
     border-radius: 10px;
     height: 52px;
     padding: 0 20px 0 10px;
@@ -34,11 +34,9 @@
 
 
 .dropdown-menu {
-    background-color: #F6F6F6;
-    font-family: Montserrat, Arial, sans-serif;
+    background-color: $secondary-color;
     font-size: 18px;
     font-weight: 400;
-    // line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
     border-radius: 5px;

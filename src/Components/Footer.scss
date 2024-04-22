@@ -2,7 +2,7 @@
 .footer {
   height: 209px;
   background-color: #000000;
-  color: #FFF;
+  color: $secondary-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,6 @@
     .phrase {
       width: 513px;
       height: 46px;
-      font-family: Montserrat, Arial, sans-serif;
       font-size: 24px;
       font-weight: 500;
       line-height: 34px;
@@ -20,19 +19,18 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+// MediaQueries
+
+@media screen and (max-width: 600px) {
     .footer {
       .phrase {
         font-size: 12px ;
         line-height: 17px;
         width: 133px ;
-      
-    }
+      }
 
-    .mobile-text {
-        display: block;
-    }
-
-
+      .mobile-text {
+          display: block;
+      }
     }
 }

@@ -1,12 +1,10 @@
-
-
+/* Banner.css */
 .banner {
   position: relative;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  border-radius: 25px;
-  
+  border-radius: 25px;  
 }
 
 .banner-image {
@@ -21,14 +19,12 @@
 .banner1 {
   filter: brightness(60%);
 }
-
   
 .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   color: $secondary-color;

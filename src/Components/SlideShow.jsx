@@ -1,30 +1,21 @@
 import React, { useState } from "react";
-import "./SlideShow.scss";
 
-const SlideShow = ({ pictures }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+const SlideShow = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
+  const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % images.length);
   };
 
-  const goToPrevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
-    );
-  };
-
-  const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === pictures.length - 1 ? 0 : prevSlide + 1
-    );
+  const handlePrev = () => {
+    setCurrentIndex((currentIndex + images.length - 1) % images.length);
   };
 
   return (
     <div className="slideshow-container">
-      {pictures.length > 1 && (
+      {images.length > 1 && (
         <div className="carousel-arrows">
-          <div onClick={goToPrevSlide} className="prev">
+          <div onClick={handlePrev} className="prev">
             <svg
               width="48"
               height="80"
@@ -38,7 +29,7 @@ const SlideShow = ({ pictures }) => {
               />
             </svg>
           </div>
-          <div onClick={goToNextSlide} className="next">
+          <div onClick={handleNext} className="next">
             <svg
               width="48"
               height="80"
@@ -55,26 +46,18 @@ const SlideShow = ({ pictures }) => {
         </div>
       )}
       <div className="slide-image">
-        {pictures.map((picture, index) => (
+        {images.map((src, index) => (
           <div
             key={index}
-            style={{ display: index === currentSlide ? "block" : "none" }}
-            onClick={() => goToSlide(index)}
+            style={{ display: index === currentIndex ? "block" : "none" }}
           >
-            <img src={picture} alt={`Photo ${index}`} />
+            <img src={src} alt={`Image ${index + 1}`} />
           </div>
         ))}
       </div>
-      {pictures.length > 1 && (
-        <div>
-          {pictures.map((_, index) => (
-            <span key={index} onClick={() => goToSlide(index)} />
-          ))}
-        </div>
-      )}
-      {pictures.length > 1 && (
+      {images.length > 1 && (
         <div className="slide-counter">
-          {currentSlide + 1}/{pictures.length}
+          {currentIndex + 1}/{images.length}
         </div>
       )}
     </div>

@@ -13,13 +13,6 @@
     }
   } 
   
-  
-
-
-  
-    
-
-  
   .nav ul {
     list-style-type: none;
     padding: 0;
@@ -34,7 +27,6 @@
   .nav ul li a {
     width: 136px;
     height: 34px;
-    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -49,6 +41,9 @@
     text-decoration: none;
   }
   
+
+  // MediaQueries
+
   @media screen and (max-width: 800px) {
     .nav ul li a {
       font-size: 12px;
@@ -89,9 +84,7 @@
   }
   
   .nav ul li a.active {
-    /* Define styles for the active link */
     text-decoration: underline;
-    /* You can adjust other styles like color, font weight, etc. */
   }
 
   @media screen and (max-width: 960px) {

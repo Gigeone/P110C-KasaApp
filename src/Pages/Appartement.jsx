@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Error from "../Pages/Error";
+import ErrorPage from "../Pages/ErrorPage";
 import appartementsData from "../Data/appartements.json"; // Importez votre fichier JSON
 import SlideShow from "../Components/SlideShow";
 import Dropdown from "../Components/Dropdown";
@@ -30,8 +30,8 @@ const Appartement = () => {
     <div className="appartement-page">
       {appartement ? (
         <div>
-          <SlideShow pictures={appartement.pictures} />
-          <div className="headerDescription">
+          <SlideShow images={appartement.pictures} />
+          <div className="header-description">
             <div>
               <h1 className="title">{appartement.title}</h1>
               <p className="location">{appartement.location}</p>
@@ -75,7 +75,7 @@ const Appartement = () => {
           </div>
         </div>
       ) : (
-        <Error />
+        <ErrorPage />
       )}
     </div>
   );

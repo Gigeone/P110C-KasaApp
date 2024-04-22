@@ -11,75 +11,74 @@
 }
 
 
-.headerDescription {
+.header-description {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
 
-    h1 {
+    
+
+    .location {
         font-weight: 500;
-        font-size: 2.25rem;
-        line-height: 51.34px;
-        color: #FF6060;
-        font-family: Montserrat, Arial, sans-serif;
+        font-size: 1.125rem;
+        line-height: 25.67px;
+        color: #000000;
+    }
+
+    .tagsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .tag {
+            height: 25px;
+            background: $primary-color;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 17.94px;
+            color: $secondary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            padding: 10px;
+            
+        }
+    }
+
+    
+
+    .hostContainer {
+        display: flex;
+        align-items: center;
+    
+        .hostPic {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+        
+        .hostName {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 25.67px;
+            color: $primary-color;
+            width: 93px;
+            height: 52px;
+        }
     }
 }
 
-
-.location {
+.title {
     font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 25.67px;
-    color: #000000;
-    font-family: Montserrat, Arial, sans-serif;
+    font-size: 2.25rem;
+    line-height: 51.34px;
+    color: $primary-color;
 }
 
+// MediaQueries
 
-.hostContainer {
-    display: flex;
-    align-items: center;
-}
-
-.hostPic {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
-.hostName {
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 25.67px;
-    color: #FF6060;
-    font-family: Montserrat, Arial, sans-serif;
-    width: 93px;
-    height: 52px;
-}
-
-.tagsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-}
-
-.tag {
-    height: 25px;
-    background: #FF6060;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 17.94px;
-    color: #FFFFFF;
-    font-family: Montserrat, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    padding: 10px;
-    
-}
 
 @media screen and (max-width: 960px) {
     .appartement-page {
@@ -103,7 +102,7 @@
         text-align: right;
     }
 
-    .headerDescription {
+    .header-description {
 
         flex-direction: column;
         padding-bottom: 27px;
@@ -127,8 +126,8 @@
         .next {
             justify-content: flex-end;
         }
-        .prev {
-            justify-content: flex-start;}
+    .prev {
+        justify-content: flex-start;}
 
         svg {
             width: 24px;
