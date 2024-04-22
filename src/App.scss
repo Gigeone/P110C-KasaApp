@@ -1,3 +1,5 @@
+@import './Styles/Variables.scss';
+@import './Styles/Global.scss';
 @import '../src/Components/Header.scss';
 @import '../src/Components/Footer.scss';
 @import '../src/Components/Cards.scss';
@@ -11,15 +13,3 @@
 
 
 
-body, html,ul {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-// VARIABLES
-$primary-color: #FF6060;
-$secondary-color: #FFFFFF;

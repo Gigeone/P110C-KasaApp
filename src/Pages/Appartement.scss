@@ -124,10 +124,17 @@
     }
    
     .carousel-arrows {
-        svg {
-            width: 13px;
-            height: 13px;
+        .next {
+            justify-content: flex-end;
         }
+        .prev {
+            justify-content: flex-start;}
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+        
     }
 
 
