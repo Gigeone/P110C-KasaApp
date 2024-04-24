@@ -4,6 +4,10 @@
     max-width: 1440px;
     flex-direction: column;
     padding: 0 100px;
+
+    .banner img {
+      filter: brightness(60%);
+    }
 }
 
 .grid-container {

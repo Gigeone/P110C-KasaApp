@@ -5,6 +5,10 @@
     flex-direction: column;
     padding: 0 100px;
 
+    .banner img {
+        filter: brightness(70%);
+    }
+
     .dropdown-list {
         display: flex;
         flex-direction: column;
